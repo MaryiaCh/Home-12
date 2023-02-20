@@ -1,0 +1,39 @@
+.btn {
+    @include flex();
+  
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    margin: $m-1 $m-2;
+  
+    text-decoration: none;
+    line-height: 45px;
+    border-radius: 45px;
+    text-align: center;
+    letter-spacing: 1px;
+  
+    font-size: $font-14;
+    font-weight: $font-w-700;
+    
+    color: $color-black;
+    background: $color-lightgray;
+
+    &__view {
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
+.btn1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 220px;
+    height: 46px;
+    left: 172px;
+    top: 200px;
+
+    border: 2px solid #FADE4B;
+    border-radius: 28px;
+}

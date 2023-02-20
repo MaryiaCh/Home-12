@@ -1,0 +1,19 @@
+.footer {
+    @include flex ();
+    
+    background: $color-black;
+    padding: $p-2;
+    
+    width: 100%;
+    height: auto;
+
+    &__navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 48px;
+
+        width: 200px;
+        height: 400px;
+    }
+}

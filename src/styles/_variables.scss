@@ -1,9 +1,8 @@
 // color
-$primary-color: rgb(64, 0, 64);
-$secondary-color: rgb(12, 11, 11);
 $color-white: white;
 $color-black: black;
 $color-gray: rgb(156, 156, 156);
+$color-lightgray: rgba(239, 239, 239, 1);
 $color-red: rgb(216, 19, 19);
 $color-green: rgb(64, 255, 64);
 $color-yellow: yellow;
@@ -14,6 +13,7 @@ $font-8: 8px;
 $font-10: 10px;
 $font-12: 12px;
 $font-14: 14px;
+$font-16: 16px;
 $font-18: 18px;
 $font-20: 20px;
 $font-24: 24px;
@@ -34,7 +34,7 @@ $font-w-900: 900;
 
 
 //font-family
-$font-family: 'Poppins', sans-serif;
+$font-family: 'Roboto', sans-serif;
 
 
 //padding

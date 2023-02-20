@@ -1,4 +1,7 @@
 .swiper {
+  display: flex;
+  justify-content: center;
+  
     width: 100%;
     height: auto;
   
@@ -6,7 +9,7 @@
       bottom: 0;
   
       &-drag {
-        background-color: $color-violet;
+        background-color: $color-white;
       }
     }
   }

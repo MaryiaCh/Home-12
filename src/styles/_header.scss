@@ -1,0 +1,21 @@
+.header {
+    @include flex ();
+    
+    background: $color-black;
+    padding: $p-2;
+    
+    width: 100%;
+    height: 15rem;
+}
+
+.input {
+    width: 459px;
+    height: 56px;
+    // left: 465px;
+    // top: 61px;
+
+    border-radius: 60px;
+
+    background-color: $color-gray;
+    color: $color-white;
+}

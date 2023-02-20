@@ -1,0 +1,116 @@
+html,
+body {
+    font-family: $font-family;
+    font-size: $font-12;
+    color: $color-black;
+    overflow-x: hidden;
+}
+
+.container {
+   @include container();
+}
+
+
+.title {
+    padding: $p-2;
+
+    font-size: $font-32;
+    font-weight: $font-w-700;
+
+    text-align: left;
+    
+    letter-spacing: .5rem;
+    color: $color-white;
+    cursor: pointer;
+
+    &-section {
+        padding: $p-2;
+
+        font-size: $font-28;
+        font-weight: $font-w-700;
+        // text-align: left;
+    }
+
+    &-description {
+        padding: 0 $p-0-5;
+        color: $color-gray;
+        font-size: $font-12;
+        text-align: center;  
+    }
+}
+
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    padding: 2rem;
+  } 
+
+
+.image {
+    width: 100%;
+}
+
+.pt-2 {
+    padding-top: $p-2;
+}
+
+
+
+.list {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.link {
+    text-decoration: overline;
+    color: white;
+    font-size: 14px;
+
+    transition: all .5s;
+    text-align: center;
+}
+
+
+
+
+.navbar {
+    position: absolute;
+    margin-left: 9rem;
+
+    &__list {
+        list-style: none;
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    
+        transition: all .5s;
+}
+
+}
+
+.text {
+    color: $color-gray;
+    font-size: $font-14;
+
+    &-decoration {
+        text-decoration: line-through;
+    }
+}
+
+// .a:hover {
+//     @include transition();
+//     cursor: pointer;
+//     border-bottom: 1px solid $color-gray;
+//     color:  $color-gray;
+//     text-decoration: none;
+// }

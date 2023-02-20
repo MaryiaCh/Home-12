@@ -1,0 +1,99 @@
+.card {
+    width: 352px;
+    height: 280px;
+
+    background: $color-lightgray;
+    border-radius: 20px;
+
+    &__description {
+        padding: $p-2;
+        text-align: left;
+        color: $color-black;
+        font-size: $font-14;
+    }
+
+    &__price {
+        padding: $p-2;
+        text-align: right;
+        color: $color-black;
+        font-size: $font-16;
+        font-weight: $font-w-700;
+    }
+
+    &__image {
+        width: 90%;
+        padding: $p-2;
+        justify-content: center; 
+        
+        position: relative;
+    }
+}
+
+
+.card1 {
+    width: 198px;
+    height: 256px;
+
+    &__description {
+        padding: $p-2;
+        text-align: left;
+        color: $color-gray;
+        font-size: $font-16;
+    }
+
+    &__price {
+        padding: $p-2;
+        text-align: left;
+        color: $color-black;
+        font-size: $font-16;
+        font-weight: $font-w-700;
+    }
+
+    &__image {
+        width: 100%;
+        padding: $p-2;
+        justify-content: center;        
+     }
+}
+
+.product {
+    @include flex();
+
+    &__item {
+        margin: $m-1;
+        padding: $p-2;
+
+        text-align: center;
+        background-color: $color-black;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    
+      &__title {
+        padding: $p-1;
+    
+        font-size: $font-32;
+        font-weight: $font-w-500;
+    
+        color: $color-white;
+
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+      }
+    
+      &__description {
+        padding: $p-1;
+
+        font-size: $font-16;
+    
+        color: $color-gray;
+        line-height: 1.5;
+
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+      }
+}
