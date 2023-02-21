@@ -8,12 +8,37 @@
     height: auto;
 
     &__navbar {
+        
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 48px;
+        justify-content: space-between;
+        // padding: 24px;
 
-        width: 200px;
+        // width: 200px;
+        // height: 400px;
+
+        &_column {
+            display: inline-block;
+            
+            padding: 0 $p-5;
+        
+            width: 250px;
+            height: 400px;
+        }
+    }
+
+    &__column {
+        display: inline-block;
+            
+        padding: $p-5;
+    
+        width: 400px;
         height: 400px;
     }
+
+    &__icons {
+        display: inline-flex;
+    }
+
 }

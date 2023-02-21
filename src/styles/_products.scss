@@ -1,73 +1,163 @@
 .card {
+    position: relative;
     width: 352px;
     height: 280px;
+    padding: 2rem;
+    margin: 2rem;
 
     background: $color-lightgray;
     border-radius: 20px;
+   
+    text-align: center;  
+    
+    display: inline-block;
+
+    &__image {
+        width: auto;
+        height: 160px;
+    }
 
     &__description {
-        padding: $p-2;
         text-align: left;
         color: $color-black;
         font-size: $font-14;
     }
 
     &__price {
-        padding: $p-2;
         text-align: right;
         color: $color-black;
-        font-size: $font-16;
+        font-size: $font-18;
         font-weight: $font-w-700;
     }
 
-    &__image {
-        width: 90%;
-        padding: $p-2;
-        justify-content: center; 
-        
-        position: relative;
+    &__ellipse {
+        position: absolute;
+        bottom: 10%;
+        left: 60%;
+
+        &_discont {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+
+            color: $color-white;
+            font-size: $font-18;
+        }
+       
+    }
+    &__ellipse-red {
+        position: absolute;
+        bottom: 10%;
+        left: 60%;
+
+        &_discont {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+
+            color: $color-black;
+            font-size: $font-18;
+        }
     }
 }
 
-
 .card1 {
-    width: 198px;
+    width: 200px;
     height: 256px;
 
-    &__description {
-        padding: $p-2;
-        text-align: left;
-        color: $color-gray;
-        font-size: $font-16;
-    }
+    padding: 2rem;
+    margin: 2rem;
 
-    &__price {
-        padding: $p-2;
-        text-align: left;
-        color: $color-black;
-        font-size: $font-16;
-        font-weight: $font-w-700;
-    }
+    border: 2px solid black;
 
     &__image {
         width: 100%;
         padding: $p-2;
-        justify-content: center;        
-     }
+    }
+
+    &__price {
+        text-align: left;
+        color: $color-black;
+        font-size: $font-16;
+        font-weight: $font-w-700;
+
+        &_discont {
+            color: $color-gray;
+            font-size: $font-14;
+            text-decoration: line-through;
+        }
+    }
+
+    &__description {
+        text-align: left;
+        color: $color-gray;
+        font-size: $font-14;
+    }
 }
+
+.reviews {
+    width: calc(100% / 3);  
+
+    padding: $p-1;  
+    
+
+    &__image {
+        width: 100%;
+
+    }
+
+    &__description {
+    padding: 0 $p-2 ;
+    font-size: $font-18;
+  
+    text-align: center;
+   }
+}
+
+.instagram {
+    color: $color-white;
+    position: relative;
+    text-align: center;
+    background: $color-black;
+
+    &__image {
+        background-color: $color-lightgray;
+        opacity: 0.6;
+        
+    }
+
+    &__description {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
 
 .product {
     @include flex();
+    padding: $p-2;
+    margin: $m-1;
 
-    &__item {
-        margin: $m-1;
-        padding: $p-2;
+    &__image {
+        width: 1280px;
+        border-radius: 10px;
 
-        text-align: center;
-        background-color: $color-black;
-        border-radius: 1rem;
         cursor: pointer;
+    
     }
+    // &__item {
+    //     margin: $m-1;
+    //     padding: $p-2;
+
+    //     text-align: center;
+    //     background-color: $color-black;
+    //     border-radius: 10px;
+    //     cursor: pointer;
+    // }
     
       &__title {
         padding: $p-1;
@@ -76,10 +166,11 @@
         font-weight: $font-w-500;
     
         color: $color-white;
+        text-align: left;
 
         position: absolute;
         top: 20%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
       }
     
@@ -89,11 +180,50 @@
         font-size: $font-16;
     
         color: $color-gray;
-        line-height: 1.5;
+        text-align: left;
 
         position: absolute;
         top: 30%;
-        left: 30%;
+        left: 40%;
         transform: translate(-50%, -50%);
       }
+
+      &__btn {
+   
+        display: inline-block;
+        width: 220px;
+        height: 46px;
+        position: absolute;
+        left: 280px;
+        top: 200px;
+        margin: $m-1 $m-2;
+      
+        text-decoration: none;
+        line-height: 45px;
+        border-radius: 28px;
+        border: 2px solid #FADE4B;
+        text-align: center;
+        letter-spacing: 1px;
+      
+        font-size: $font-16;
+        font-weight: $font-w-700;
+        
+        color: $color-yellow;   
+    }
+
+    &__vector-l {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        left: 10px;
+        top: 187px;
+    }
+    
+    &__vector-r {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        right: 10px;
+        top: 187px;
+    }
 }

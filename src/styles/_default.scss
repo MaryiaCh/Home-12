@@ -67,7 +67,7 @@ body {
 }
 
 .link {
-    text-decoration: overline;
+    text-decoration: none;
     color: white;
     font-size: 14px;
 
@@ -78,34 +78,26 @@ body {
 
 
 
-.navbar {
-    position: absolute;
-    margin-left: 9rem;
+// .navbar {
+//     position: absolute;
+//     margin-left: 9rem;
 
-    &__list {
-        list-style: none;
-        display: inline-block;
-        padding: 1rem;
-    }
+//     &__list {
+//         list-style: none;
+//         display: inline-block;
+//         padding: 1rem;
+//     }
 
-    &__link {
-        text-decoration: none;
-        color: white;
-        font-size: 14px;
+//     &__link {
+//         text-decoration: none;
+//         color: white;
+//         font-size: 14px;
     
-        transition: all .5s;
-}
+//         transition: all .5s;
+// }
 
-}
+// }
 
-.text {
-    color: $color-gray;
-    font-size: $font-14;
-
-    &-decoration {
-        text-decoration: line-through;
-    }
-}
 
 // .a:hover {
 //     @include transition();

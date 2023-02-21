@@ -18,27 +18,30 @@
     <header class="header">
         <nav class="navbar">
             <ul>
-               <li class="navbar__list"><a href="#" class="navbar__link a">г. Минск</a></li>
-               <li class="navbar__list"><a href="#" class="navbar__link a">+375 (29) 7072788</a></li>
-               <li class="navbar__list"><a href="#" class="navbar__link a">+375 (33) 7072788</a></li>
+               <li class="list"><a href="#" class="link">г. Минск</a></li>
+               <li class="list"><a href="#" class="link">+375 (29) 7072788</a></li>
+               <li class="list"><a href="#" class="link">+375 (33) 7072788</a></li>
 
-               <span class="text">
-               <li class="navbar__list"><a href="#" class="navbar__link a">Фотомагазин</a></li>
-               <li class="navbar__list"><a href="#" class="navbar__link a">Доставка и оплата</a></li>
-               <li class="navbar__list"><a href="#" class="navbar__link a">Трейд-ин</a></li>
-              </span>
-           </ul>
+               <span>
+                <li class="list"><a href="#" class="link text">Фотомагазин</a></li>
+                <li class="list"><a href="#" class="link text">Доставка и оплата</a></li>
+                <li class="list"><a href="#" class="link text">Трейд-ин</a></li>
+               </span>
+            </ul>
 
-           <ul>
-            <li class="navbar__list"><a href="№" class="navbar__link a">Категории</a></li>
-            <li class="navbar__list"><a href="№" class="navbar__link a">Photomarket</a></li>
-            <input class="input" action="" img src="./img/icons/search.png" alt="img">Я ищу... </input>
-            <li class="navbar__list"><img src="./img/icons/map pin.png" alt="icon"></li>
-            <li class="navbar__list"><img src="./img/icons/Войти.png" alt="icon"></li>
-            <li class="navbar__list"><img src="./img/icons/shopping cart.png" alt="icon"></li>
-           </ul>
-       </nav>
-       </header> 
+            <ul>
+                <li class="list"><a href="#" class="link header__burger">Категории</a></li>
+                <li class="list"><a href="#" class="link header__title">Photomarket</a></li>
+                <input class="input" img src="./img/icons/search.png" alt="img" placeholder=" Я ищу..."></input>
+
+                <span>
+                <li class="icon list"><img src="./img/icons/map pin.png" alt="icon"><p class="icon__description">Адрес</p></li>
+                <li class="icon list"><img src="./img/icons/user.png" alt="icon"><p class="icon__description">Войти</p></li>
+                <li class="icon list"><img src="./img/icons/shopping cart.png" alt="icon"><p class="icon__description">Корзина</p></li>
+                </span>
+               </ul>
+        </nav>
+    </header>
 
     <main>
 
@@ -48,10 +51,14 @@
                   <div class="swiper-slide">
                     <div class="product">
                         <div class="product__item">
-                        <img src="./img/first page/main.png" alt="Img">
+                        <img class="product__vector-l" src="./img/icons/left vector.png" alt="icon">
+                        
+                        <img class="product__image" src="./img/first page/main.png" alt="Img">
+                        
+                        <img class="product__vector-r" src="./img/icons/right vector.png" alt="icon">
                         <h3 class="product__title">Шедевры в деталях вместе с Nikon Z7II</h3>
                         <p class="product__description">Представляем совершенно новую фотокамеру Z 7II</p>
-                        <a class="btn1 link" href="#">Узнать больше</a>
+                        <a class="product__btn link" href="#">Узнать больше</a>
                        </div>
                     </div>
                   </div>
@@ -69,6 +76,10 @@
             <p class="card__price">4 240р</p>
 
             <img class="card__image" src="./img/first page/image 1.png" alt="Img">
+            
+            <img class="card__ellipse" src="./img/first page/Ellipse yellow.png" alt="icon">
+            <p class="card__ellipse_discont">Скидка 10%</p>
+            
          </div>
 
          <div class="card">
@@ -78,6 +89,8 @@
             <p class="card__price">1 100р</p>
 
             <img class="card__image" src="./img/first page/image 2.png" alt="Img">
+            <img src="./img/first page/Ellipse red.png" alt="">
+            <p class="card__ellipse-red_discont">Скидка 25%</p>
          </div>
 
          <div class="card">
@@ -87,6 +100,8 @@
             <p class="card__price">4 240р</p>
 
             <img class="card__image" src="./img/first page/image 3.png" alt="Img">
+            <img class="card__ellipse-red" src="./img/first page/Ellipse yellow.png" alt="icon">
+            <p class="card__ellipse_discont">Скидка 10%</p>
          </div>
         </div>
         </section>
@@ -99,21 +114,21 @@
                 <div class="card1">                             
                     <img class="card1__image" src="./img/first page/image 1.png" alt="Img">
 
-                    <p class="card1__price">4 240р <span class="text-decoration"> 5 400р</span></p>
+                    <p class="card1__price">4 240р <span class="card1__price_discont"> 5 400р</span></p>
                     <p class="card1__description">Canon EOS 5D</p>
                 </div>      
 
                 <div class="card1">                             
                     <img class="card1__image" src="./img/first page/2.png" alt="Img">
 
-                    <p class="card1__price">4 240р <span class="text-decoration"> 5 400р</span></p>
+                    <p class="card1__price">4 240р <span class="card1__price_discont"> 5 400р</span></p>
                     <p class="card1__description">Объектив Canon EF 50mm f/1.2L USM</p>
                 </div> 
 
                 <div class="card1">                             
                     <img class="card1__image" src="./img/first page/3.png" alt="Img">
 
-                    <p class="card1__price">6 705р <span class="text-decoration"> 7 560р</span></p>
+                    <p class="card1__price">6 705р <span class="card1__price_discont"> 7 560р</span></p>
                     <p class="card1__description">Fujifilm x-519 Body</p>
                 </div> 
 
@@ -143,12 +158,13 @@
                 <div class="card1">                             
                     <img class="card1__image" src="./img/first page/7.png" alt="Img">
 
-                    <p class="card1__price">3 540р <span class="text-decoration"> 4 100р</span></p>
+                    <p class="card1__price">3 540р <span class="card1__price_discont"> 4 100р</span></p>
                     <p class="card1__description">Стабилизатор DJI RS 2</p>
                 </div> 
 
                 <div class="card1">                             
                     <img class="card1__image" src="./img/first page/8.png" alt="Img">
+
 
                     <p class="card1__price">890 р</p>
                     <p class="card1__description">Canon Speedlite EL-100</p>
@@ -169,10 +185,9 @@
                 </div>                 
             </div>
 
-            <div class="second-block">
-            <a class="btn btn__view" href="#">Показать еще</a>
+            <div class="section-block">
+            <a class="btn" href="#">Показать еще</a>
             </div>
-
         </section>
 
         <section class="section">
@@ -189,19 +204,19 @@
             <h3 class="title-section">Обзоры</h3>
 
             <div class="section__block">
-                <div>
-                    <img src="./img/first page/reviews 1.png" alt="Img">
-                    <p>Nikon Z6 II - большой обзор беззеокальной фотокамеры</p>
+                <div class="reviews">
+                    <img class="reviews__image" src="./img/first page/reviews 1.png" alt="Img">
+                    <p class="reviews__description">Nikon Z6 II - большой обзор беззеокальной фотокамеры</p>
                 </div>
 
-                <div>
-                    <img src="./img/first page/reviews 2.png" alt="Img">
-                    <p>Zhiyun Crane 2S - новая легенда или незначительное обновление?</p>
+                <div class="reviews">
+                    <img class="reviews__image" src="./img/first page/reviews 2.png" alt="Img">
+                    <p class="reviews__description">Zhiyun Crane 2S - новая легенда или незначительное обновление?</p>
                 </div>
 
-                <div>
-                    <img src="./img/first page/reviews 3.png" alt="Img">
-                    <p>6 лучших объективов Canon RF для видеосъемки</p>
+                <div class="reviews">
+                    <img class="reviews__image" src="./img/first page/reviews 3.png" alt="Img">
+                    <p class="reviews__description">6 лучших объективов Canon RF для видеосъемки</p>
                 </div>
             </div>
         </section>
@@ -212,77 +227,76 @@
             <div class="section__block">
                 <img src="./img/first page/instagram 1.png" alt="img">
                 <img src="./img/first page/instagram 2.png" alt="img">
-                <img src="./img/first page/instagram 3.png" alt="img">
+                
+                <div class="instagram">
+                <img class="instagram__image" src="./img/first page/instagram 3.png" alt="img">
+                <p class="instagram__description">@photomarket.by</p>
+                </div>
+
                 <img src="./img/first page/instagram 4.png" alt="img">
                 <img src="./img/first page/instagram 5.png" alt="img">
             </div>
         </section>
-
-
-
-
-
-
     </main>
 
     <footer class="footer">
         <nav class="footer__navbar">
-            <ul>
-                <li class="navbar__list"><a href="#" class="navbar__link a">фотоаппараты</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">объективы</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">студийный свет</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">аксессуары</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">вспышки</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">сумки</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">печать</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">гаджеты</a></li>
+            <ul class="footer__navbar_column">
+                <li class="list"><a href="#" class="link">фотоаппараты</a></li>
+                <li class="list"><a href="#" class="link">объективы</a></li>
+                <li class="list"><a href="#" class="link">студийный свет</a></li>
+                <li class="list"><a href="#" class="link">аксессуары</a></li>
+                <li class="list"><a href="#" class="link">вспышки</a></li>
+                <li class="list"><a href="#" class="link">сумки</a></li>
+                <li class="list"><a href="#" class="link">печать</a></li>
+                <li class="list"><a href="#" class="link">гаджеты</a></li>
             </ul>
         </nav>
 
         <nav class="footer__navbar">
-            <ul>
-                <li class="navbar__list"><a href="#" class="navbar__link a">фотомагазин</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">фотопрокат</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">трейд-ин</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">доставка</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">как купить?</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">способы оплаты</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">гарантия и возврат</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">сертификаты</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">скидки</a></li>
+            <ul class="footer__navbar_column">
+                <li class="list"><a href="#" class="link">фотомагазин</a></li>
+                <li class="list"><a href="#" class="link">фотопрокат</a></li>
+                <li class="list"><a href="#" class="link">трейд-ин</a></li>
+                <li class="list"><a href="#" class="link">доставка</a></li>
+                <li class="list"><a href="#" class="link">как купить?</a></li>
+                <li class="list"><a href="#" class="link">способы оплаты</a></li>
+                <li class="list"><a href="#" class="link">гарантия и возврат</a></li>
+                <li class="list"><a href="#" class="link">сертификаты</a></li>
+                <li class="list"><a href="#" class="link">скидки</a></li>
             </ul>
         </nav>       
 
         <nav class="footer__navbar">
-            <ul >
-                <li class="navbar__list"><a href="#" class="navbar__link a">о компании</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">новости</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">акции</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">обзоры</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">контакты</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">вакансии</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">партнеры</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">отзывы</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">карта сайта</a></li>
+            <ul class="footer__navbar_column">
+                <li class="list"><a href="#" class="link">о компании</a></li>
+                <li class="list"><a href="#" class="link">новости</a></li>
+                <li class="list"><a href="#" class="link">акции</a></li>
+                <li class="list"><a href="#" class="link">обзоры</a></li>
+                <li class="list"><a href="#" class="link">контакты</a></li>
+                <li class="list"><a href="#" class="link">вакансии</a></li>
+                <li class="list"><a href="#" class="link">партнеры</a></li>
+                <li class="list"><a href="#" class="link">отзывы</a></li>
+                <li class="list"><a href="#" class="link">карта сайта</a></li>
             </ul>
         </nav>
 
-        <nav class="footer__navbar">
-            <ul >
-                <li class="navbar__list"><a href="#" class="navbar__link a">контактная информация</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">+37592901001010</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">г. Минск ул. Победителей д 3 пом 41</a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a">fotomagaz@gmail.com</a></li>
+        <nav class="footer__navbar footer__column">
+            <ul>
+                <li class="list"><a href="#" class="link">контактная информация</a></li>
+                <li class="list"><a href="#" class="link">+37592901001010</a></li>
+                <li class="list"><a href="#" class="link">г. Минск ул. Победителей д 3 пом 41</a></li>
+                <li class="list"><a href="#" class="link">fotomagaz@gmail.com</a></li>
             </ul>
 
             <ul >
-                <li class="navbar__list"><a href="#" class="navbar__link a">способы оплаты</a></li>
+                <li class="list"><a href="#" class="link">способы оплаты</a></li>
             </ul>
 
             <ul class="footer__icons">
-                <li class="navbar__list"><a href="#" class="navbar__link a"><img src="./img/footer/image 48.png" alt="icon"></a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a"><img src="./img/footer/image 49.png" alt="icon"></a></li>
-                <li class="navbar__list"><a href="#" class="navbar__link a"><img src="./img/footer/image 50.png" alt="icon"></a></li>
+                <li class="list"><a href="#" class="link"><img src="./img/footer/image 48.png" alt="icon"></a></li>
+                <li class="list"><a href="#" class="link"><img src="./img/footer/image 49.png" alt="icon"></a></li>
+                <li class="list"><a href="#" class="link"><img src="./img/footer/image 50.png" alt="icon"></a></li>
             </ul>
         </nav>
     </footer>
