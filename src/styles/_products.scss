@@ -1,3 +1,6 @@
+.card-mobile {
+    display: none;
+}
 .card {
     position: relative;
     width: 352px;
@@ -37,25 +40,25 @@
 
         &_discont {
             position: absolute;
-            bottom: 50%;
-            left: 50%;
+            bottom: 25%;
+            left: 60%;
 
-            color: $color-white;
+            color: $color-black;
             font-size: $font-18;
         }
        
     }
     &__ellipse-red {
         position: absolute;
-        bottom: 10%;
+        bottom: 20%;
         left: 60%;
 
         &_discont {
             position: absolute;
-            bottom: 50%;
-            left: 50%;
+            bottom: 25%;
+            left: 60%;
 
-            color: $color-black;
+            color: $color-white;
             font-size: $font-18;
         }
     }
@@ -68,10 +71,9 @@
     padding: 2rem;
     margin: 2rem;
 
-    border: 2px solid black;
-
     &__image {
-        width: 100%;
+        width: 150px;
+        height: 150px;
         padding: $p-2;
     }
 
@@ -149,17 +151,8 @@
         cursor: pointer;
     
     }
-    // &__item {
-    //     margin: $m-1;
-    //     padding: $p-2;
-
-    //     text-align: center;
-    //     background-color: $color-black;
-    //     border-radius: 10px;
-    //     cursor: pointer;
-    // }
-    
-      &__title {
+  
+    &__title {
         padding: $p-1;
     
         font-size: $font-32;
